@@ -68,3 +68,51 @@ main .imageContainer {
     border-radius: 15px;
     box-shadow: 0 4px 8px #35424aab;
 }
+main img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+main .containerInfo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #35424a98;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform .3s ease;
+}
+.imageContainer:hover .containerInfo {
+    transform: translateY(0);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #35424a;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+footer p {
+    margin: 5px 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+footer ul {
+    list-style: none;
+    padding: 5px;
+    margin: 5px 0;
+    display: flex;
+    gap: 20px;
+}
+footer ul li {
+    font-size: 1.2em;
+}
